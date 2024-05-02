@@ -147,6 +147,14 @@ li::marker {
   border-bottom: 1px solid var(--light-grey);
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (min-width: 1440px) {
   .container {
     margin: 122px auto;
