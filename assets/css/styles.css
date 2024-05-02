@@ -61,6 +61,7 @@ h1 {
   box-sizing: border-box;
   background-color: var(--white);
   width: min(100%, 736px);
+  margin: auto;
 }
 
 .receipe-content {
