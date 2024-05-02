@@ -65,7 +65,7 @@ h1 {
 }
 
 .receipe-content {
-  padding: 40px;
+  padding: 0 40px;
 }
 
 b {
@@ -80,10 +80,6 @@ p {
   color: var(--primary);
 }
 
-.receipe-image-container {
-  width: 100%;
-}
-
 .receipe-image {
   width: 100%;
   height: auto;
@@ -96,11 +92,13 @@ p {
   box-sizing: border-box;
 }
 
-.receipe-section:not(:last-child) {
+.receipe-section {
   margin-bottom: 2rem;
-  padding-bottom: 2rem;
 }
 
+.receipe-section.border-bottom {
+  padding-bottom: 2rem;
+}
 .border-bottom {
   border-bottom: 1px solid var(--wenge-brown);
 }
@@ -153,9 +151,15 @@ li::marker {
   .container {
     margin: 122px auto;
   }
+
   .receipe-container {
     border-radius: 16px;
     margin: auto;
+  }
+
+  .receipe-image-container {
+    padding: 40px;
+    margin-top: 0;
   }
 
   .receipe-image {
