@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Outfit;
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400, 'GRAD' 88;
+}
+
+@font-face {
+  font-family: 'Young-Serif';
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --primary: hsl(14, 45%, 36%); /* Nutmeg */
+  --accent: hsl(332, 51%, 32%); /* Dark Raspberry */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%); /* Rose White */
+  --background: hsl(30, 54%, 90%); /* Eggshell */
+  --light-grey: hsl(30, 18%, 87%); /* light grey */
+  --wenge-brown: hsl(30, 10%, 34%); /* Wenge Brown */
+  --dark-charcoal: hsl(24, 5%, 18%); /* Dark charcoal */
+  --font-family: Outfit, serif;
+  --title-font-family: Young-Serif, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: var(--background);
+  font-family: var(--family);
+  color: var(--wenge-brown);
+  font-size: 16px;
+  font-weight: 400;
+  height: 100vh;
+}
+
+h1 {
+  font-family: var(--title-font-family);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--dark-charcoal);
+  margin-bottom: 28px;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.receipe-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--white);
+  width: min(100%, 736px);
+}
+
+.receipe-content {
+  padding: 40px;
+}
+
+b {
+  color: hsl(24, 5%, 18%);
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.receipe-image-container {
+  width: 100%;
+}
+
+.receipe-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.receipe-section {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.receipe-section:not(:last-child) {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--wenge-brown);
+}
+
+.receipe-section-title {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.receipe-preparation-time-info {
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--rose-white);
+}
+
+.receipe-preparation-time-info h2 {
+  color: var(--accent);
+}
+
+ol,
+ul {
+  margin: 0 1rem;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.receipe-nutrition-info table {
+  width: 100%;
+}
+
+.receipe-nutrition-info table .text-primary {
+  font-weight: 600;
+}
+
+.receipe-nutrition-info table td {
+  padding: 0.75rem 0.75rem;
+}
+
+.receipe-nutrition-info table tr:not(:last-of-type) td {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 122px auto;
+  }
+  .receipe-container {
+    border-radius: 16px;
+    margin: auto;
+  }
+
+  .receipe-image {
+    border-radius: 8px;
+  }
+}
