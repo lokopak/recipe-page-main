@@ -28,8 +28,7 @@ A simply receipe card with play HTML and CSS
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/lokopak/recipe-page-main)
-- Live Site URL: [Add live site URL here](https://lokopak.github.io/recipe-page-main/)
+- Live Site URL: [Demo](https://lokopak.github.io/recipe-page-main/)
 
 ## My process
 
