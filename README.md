@@ -36,11 +36,10 @@ A simply receipe card with play HTML and CSS
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Plain CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/lokopak)
+- Frontend Mentor - [@lokopak](https://www.frontendmentor.io/profile/lokopak)
